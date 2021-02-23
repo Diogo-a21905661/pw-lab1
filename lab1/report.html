@@ -5,10 +5,10 @@
     <title>Relatório Laboratorial 1</title>
 </head>
 <body>
-    <h1> Relatório do Trabalho Laboratorial 1 </h1>
-    <h4>O objetivo deste trabalho foi a criação de uma página web, seguido pela disponibilização dessa mesma página web num servidor na nuvem.</h4>
-    <img src="img/wordcloud.png">
-    <p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+    <center><h1> Relatório do Trabalho Laboratorial 1 </h1></center>
+    <center><h4>O objetivo deste trabalho foi a criação de uma página web, seguido pela disponibilização dessa mesma página web num servidor na nuvem.</h4></center>
+    <center><img src="img/wordcloud.png"></center>
+    <center><p>-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p></center>
     <h3><i>Introdução</i></h3>
     <p>Concluimos este objetivo através da resolução de 3 exercicios dados pelo enunciado:</p>
     <ol>
@@ -27,72 +27,85 @@
     <h4><i>(Endereços IP)</i></h4>
     <p>Neste exercicio vamos encontrar informações sobre os IPs do meu PC e do website da heroku, sendo essa informação os IPs em si e a sua localização.</p>
     <p>De modo a encontrarmos o IP do computador, podemos, através do google, pesquisar "<a href="https://www.google.com/search?client=firefox-b-d&q=what+is+my+ip">what is my ip</a>", que dá o endereço público do computador. Depois, podemos localizar o IP através do website <a href="https://whatismyipaddress.com/ip-lookup">WhatIsMyIPAddress</a>.</p> 
-    <li>My IP</li>
-    <img src="img/myIP.png" width="700" height="300">
-    <li>IP`s Location</li>
-    <img src="img/locationMyIP.png" width="400" height="300">
-    <br>
-    <br>
-    <br>
+    <figure>
+        <figcaption>My IP</figcaption>
+        <img src="img/myIP.png" alt="My IP">
+    </figure>
+    <figure>
+        <figcaption>IP`s Location</figcaption>
+        <img src="img/locationMyIP.png" alt="My IPs Location">
+    </figure>
+    <br><br>
     <p>Desse mesmo modo, podemos encontrar o ip do website Heroku através do site <a href="https://whatismyipaddress.com/ip-lookup">Site24x7</a>, que dá o IP do url que inserimos. Encontramos a localização da mesma forma que encontrámos no exercicio anterior.</p>
-    <li>Heroku`s IP</li>
-    <img src="img/herokuIP.png" width="700" height="300">
-    <li>IP`s Location</li>
-    <img src="img/locationHeroku.png" width="400" height="300">
-    <br>
-    <br>
-    <br>
+    <figure>
+        <figcaption>Heroku`s IP</figcaption>
+        <img src="img/herokuIP.png" alt="Herokus IP">
+    </figure>
+    <figure>
+        <figcaption>Heroku`s IP Location</figcaption>
+        <img src="img/locationHeroku.png" alt="Herokus Website IP Location">
+    </figure>
+    <br><br>
     <h4><i>(Percurso)</i></h4>
     <p>Nesta parte do exercicio procurei encontrar a rota que os pacotes IP fazem, desde o meu computador até o endereço IP obtido do site Heroku. De modo a fazer isto, utilizei dois métodos diferentes, sendo esses o comando "<i>tracert</i>", que vai ser corrido na terminal (Command Prompt), e a página web "<a href="https://geotraceroute.com/">GeoTraceRoute</a>" que, ao mesmo tempo que mapeia a rota dos pacotes IP, tambèm mostra a sua localização no globo.</p>
     <p>Ao correr o comando "tracert" no terminal com o IP que queremos mapear para, vamos receber os IPs que passamos por, visualizados desta forma:</p>
-    <img src="img/terminalTracertHeroku.png" width="600" height="250">
+    <figure>
+        <img src="img/terminalTracertHeroku.png" alt="Use of Tracer Command for Heroku">
+    </figure>
     <br>
     <p>Utilizando o website "<a href="https://geotraceroute.com/">GeoTraceRoute</a>", e dando como localização origem Portugal e como IP o que foi utilizado anteriormente na terminal, ficamos com a seguinte rota visualizada no globo:</p>
-    <img src="img/geoTraceRouteHeroku.png" width="600" height="250">
-    <br>
-    <br>
-    <br>
+    <figure>
+        <img src="img/geoTraceRouteHeroku.png" alt="Location in Globe of IPs traced">
+    </figure>
+    <br><br>
     <h3><i>Exercicio 3</i></h3>
     <h4><i>(HTTP)</i></h4>
     <p>Neste exercicio aprendemos mais sobre como o HTTP, o protocolo de troca de mensagens entre um cliente e um servidor Web, funciona. Descobrimos assim que o protocolo HTTP funciona com duas mensagens, sendo essas o HTTP GET, onde o cliente pede uma determinada página Web ao servidor, e o HTTP POST, onde o cliente envia dados ao servidor. Esta é a arquitetura cliente-servidor.</p>
     <p>Se quisermos, podemos utilizar o comando "CTRL + U" para visualizar o "código fonte" da página. Ao fazermos isto na <a href="https://lab1-a21905661.herokuapp.com/">Página Web</a> criada no primeiro exercicio, vamos ficar com uma página auxiliar que contêm o código HTML que tinhamos copiado do enunciado no primeiro exercicio.</p>
-    <img src="img/codigoFonteInicial.PNG" width="600" height="400">
-    <br>
-    <br>
-    <br>
+    <figure>
+        <img src="img/codigoFonteInicial.PNG" alt="HTML Code for Initial Page">
+    </figure>
+    <br><br>
     <h4><i>(Inspect)</i></h4>
     <p>Nesta parte da resolução utilizei a ferramenta "Inspect", que é possivel aceder através de "CTRL + SHIFT + I", para encontrar e analisar uma grande variedade de informação da <a href="https://lab1-a21905661.herokuapp.com/">Página Web</a> criada no exercicio 1. Ao utilizar o comando e clicando na barra "Network", verificamos que precisamos de fazer um request à página de modo a termos a informação que queremos. De modo a fazer esse request, selecionei o URL do site e fiz "Enter".</p>
     <p>A página irá ficar desta forma:</p>
-    <img src="img/inspectPaginaWeb.png" height="300">
-    <br>
-    <br>    
+    <figure>
+        <img src="img/inspectPaginaWeb.png" alt="Initial Page Inspection">
+    </figure>
+    <br><br>    
     <p>No total, verificamos que aparecem três mensagens, ou seja, que são descarregados três ficheiros na sequencia de um clique num hiperlink. Nessas três mensagens, duas são ficheiros auxiliares que o cliente pediu ao servidor, sendo esses as imagens, e um é a determinada página Web em formato HTML, sendo esse o primeiro pedido HTTP GET.</p>
-    <br>
     <p>Para o primeiro ficheiro descarregado, sendo esse o código HTML da página, reparamos que o tipo é HTML. Também podemos visualizar o tempo de espera e de descarga, através dos "Timings", que é 6.30s e 1ms, respetivamente.</p>
-    <p>Preview do primeiro ficheiro (HTML)</p>
-    <img src="img/previewPagina1.png" width="500" height="400">
-    <p>Headers do primeiro ficheiro (HTML)</p>
-    <img src="img/headerPagina1.png" width="600" height="350">
-    <p>Timing do primeiro ficheiro (HTML)</p>
-    <img src="img/timingPagina1.png" width="500" height="250">
-    <br>
-    <br>
-    <br>
+    <figure>
+        <figcaption>Preview do primeiro ficheiro (HTML)</figcaption>
+        <img src="img/previewPagina1.png" alt="Preview of First File of type HTML">
+    </figure>
+    <figure>
+        <figcaption>Headers do primeiro ficheiro (HTML)</figcaption>
+        <img src="img/headerPagina1.png" alt="Header of First File of type HTML">
+    </figure>
+    <figure>
+        <figcaption>Timing do primeiro ficheiro (HTML)</figcaption>
+        <img src="img/timingPagina1.png" alt="Timing of First File of type HTML">
+    </figure>
+    <br><br>
     <p>Para o segundo ficheiro descarregado, sendo esse o ficheiro auxiliar descarregado para a imagem utilizada, reparamos que o tipo é png. Também conseguimos visualizar o tempo de espera e de descarga através da tabela "Timings", que mostra que são 109ms e 53ms, respetivamente.</p>
-    <p>Preview do segundo ficheiro (png)</p>
-    <img src="img/previewPagina2.png" width="500" height="400">
-    <p>Headers do segundo ficheiro (png)</p>
-    <img src="img/headerPagina2.png" width="600" height="350">
-    <p>Timing do segundo ficheiro (png)</p>
-    <img src="img/timingPagina2.png" width="500" height="250">
-    <br>
-    <br>
-    <br>
+    <figure>
+        <figcaption>Preview do segundo ficheiro (png)</figcaption>
+        <img src="img/previewPagina2.png" alt="Preview of Second File of type png">
+    </figure>
+    <figure>
+        <figcaption>Headers do segundo ficheiro (png)</figcaption>
+        <img src="img/headerPagina2.png" alt="Header of Second File of type png">
+    </figure>
+    <figure>
+        <figcaption>Timing do segundo ficheiro (png)</figcaption>
+        <img src="img/timingPagina2.png" alt="Timing of Second File of type png">
+    </figure>
+    <br><br>
     <p>Para o terceiro ficheiro descarregado, sendo esse o ficheiro auxiliar descarregado para o icon utilizado, reparamos que o tipo é html. Devido à sua informação não estar a aparecer corretamente, e devido a ser um ficheiro de natureza inesperada, a informação sobre os "Timings", "Headers" e o "Preview" não vai ser anotada.</p>
     <br>
     <h3><i>Conclusão</i></h3>
     <p>A resolução deste trabalho ajudou-me a aprender e a compreender melhor as capacidades do HTML, uma linguagem nova que só começámos a aprender nesta disciplina. Também ajudou-me a aprender como o protocolo HTTP era utilizado e como funcionavam os endereços IP.</p>
-    <br>
-    <br>
+    <br><br>
 </body>
 </html>
