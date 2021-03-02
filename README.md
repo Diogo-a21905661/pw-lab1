@@ -1,5 +1,5 @@
 # pw-lab1
-Trabalho Laboratorial 1 de Programação Web
+Hub de Trabalhos Laboratoriais de Programação Web
 
 Link App Heroku
 https://lab1-a21905661.herokuapp.com/
