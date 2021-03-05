@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Website sobre Seoul, a capital da Coreia do Sul.">
+    <meta name="keywords" content="Lusofona,HTML,Programação Web,Trabalhos,Seoul">
+    <meta name="author" content="Diogo Araújo">
+    <link rel="shortcut icon" type="image/x-icon" href="images/city.ico"/>
+    <body style="background-color:lavenderblush"></body>
+    <title>PW Lab2</title>
+</head>
+<body>
+    <center><h1> Seoul </h1></center>
+    <hr>
+    <br>
+    <figure>
+        <center><img src="images/seoulNight.jpg" alt="City of Seoul at Night"></center>
+    </figure>
+    <center><p><a href="index.html">Introdução</a> | <a href="local.html">Localização</a> | <a href="multimedia.html">Multimédia</a> | <a href="info.html">Informações</a> | <a href="quizz.html"><b>Quizz</b></a> | <a href="comentarios.html">Comentários</a> | <a href="../index.html">Home</a></p></center>
+    <br><br>
+    <center><h3><b>Quizz</b></h3></center>
+    <center><p>Nesta página é possivel efetuar um quiz sobre a cidade, onde será testado em informação presente nas páginas anteriores. No fim, é possivel mandar os resultados para um endereço de email.</p></center>
+    <br><br>
+    <form method="POST" action="mailto:deeeeeepiam@gmail.com">
+        <fieldset>
+            <legend>Identificação Utilizador</legend>
+            <label>Nome: </label>
+            <input type="text" name="Nome" placeholder="Diogo">
+            <br><br>
+            <label>Apelido: </label>
+            <input type="text" name="Apelido" placeholder="Araújo">
+            <br><br>
+            <label>Email: </label>
+            <input type="email" name="Gmail" placeholder="peekypeter@gmail.com">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Capital</legend>
+            <input type="radio" name="Capital" value="Coreia Do Norte">
+            <label> Coreia do Norte</label>
+            <br>
+            <input type="radio" name="Capital" value="Coreia do Sul">
+            <label> Coreia do Sul</label> 
+            <br>
+            <input type="radio" name="Capital" value="China">
+            <label> China</label>
+            <br>
+            <input type="radio" name="Capital" value="Japão">
+            <label> Japão</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Fundação de Seoul</legend>
+            <label>Ano: </label>
+            <input type="number" name="Year when Founded" min="2" max="100" step="2">
+            <label>b.c.</label>
+            <br><br>
+            <label>Nome do império: </label>
+            <select name="Empire that Founded">
+                <option value="Baekje">Baekje</option>
+                <option value="Joseon">Joseon</option>
+                <option value="Império Coreano" selected>Império Coreano</option>
+                <option value="Goryeo">Goryeo</option>
+            </select>
+            <br><br>
+            <label>Nome no Momento: </label>
+            <input type="text" name="Name when Founded" placeholder="Bukhasan">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Monumentos de Seoul</legend>
+            <label>Quais destes são monumentos são de <i>Seoul</i>? (Relativamente ao video)</label>
+            <br><br>
+            <input type="checkbox" name="Monument Value 1" value="Gyeongbukgung Palace">
+            <label> Gyeongbukgung Palace</label>
+            <br>
+            <input type="checkbox" name="Monument Value 2" value="War Memorial">
+            <label> War Memorial</label>
+            <br>
+            <input type="checkbox" name="Monument Value 3" value="Potala Palace">
+            <label> Potala Palace</label>
+            <br>
+            <input type="checkbox" name="Monument Value 4" value="Mount Fuji">
+            <label> Mount Fuji</label>
+            <br>
+            <input type="checkbox" name="Monument Value 5" value="Tower of Seoul">
+            <label> N Seoul Tower</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Informação Geral</legend>
+            <label>Quando é que lhe foi dada o nome <i>Seoul</i>? </label>
+            <input type="date" name="When name was made" min="1900-01-01" max="2000-01-01">
+            <br><br>
+            <label>Qual é a quantidade de População? </label>
+            <input type="number" name="Population" min="1">
+            <label> milhões</label>
+            <br><br>
+            <label>Qual a área total de Seoul? </label>
+            <input type="number" name="Area" min="100" max="1000">
+            <label> km²</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Simbolos Nacionais</legend>
+            <label>Passaro Nacional: </label>
+            <input type="text" name="National Bird">
+            <br><br>
+            <label>Cor Nacional: </label>
+            <input type="color" name="National Color" value="#ff0000">
+            <br><br>
+            <label>Flor Nacional: </label>
+            <input type="text" name="National Flower">
+            <br>
+        </fieldset>
+        <br>
+    </form>
+    <br><br><br>
+</body>
+</html>
