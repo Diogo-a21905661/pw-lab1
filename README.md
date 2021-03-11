@@ -1,4 +1,4 @@
-# pw-lab1
+# pw-labs
 Hub de Trabalhos Laboratoriais de Programação Web
 
 Link App Heroku
