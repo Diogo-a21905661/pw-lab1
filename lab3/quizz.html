@@ -21,21 +21,23 @@
     <center><h3><b>Quizz</b></h3></center>
     <center><p>Nesta página é possivel efetuar um quiz sobre a cidade, onde será testado em informação presente nas páginas anteriores. No fim, é possivel mandar os resultados para um endereço de email.</p></center>
     <br><br>
-    <form method="POST" action="mailto:deeeeeepiam@gmail.com">
+    <form autocomplete="on">
         <fieldset>
-            <legend>Identificação Utilizador</legend>
+            <legend><b>Identificação Utilizador</b></legend>
             <label>Nome: </label>
-            <input type="text" name="Nome" placeholder="Diogo">
+            <input type="text" name="Nome" placeholder="Diogo" size="30" maxlength="25" form="mainForm" autofocus required>
             <br><br>
             <label>Apelido: </label>
-            <input type="text" name="Apelido" placeholder="Araújo">
+            <input type="text" name="Apelido" placeholder="Araújo" size="30" maxlength="25" form="mainForm" required>
             <br><br>
             <label>Email: </label>
-            <input type="email" name="Gmail" placeholder="peekypeter@gmail.com">
+            <input type="email" name="Gmail" placeholder="peekypeter@gmail.com" size="30" maxlength="30" form="mainForm" required>
         </fieldset>
         <br>
+    </form>
+    <form method="POST" action="mailto:deeeeeepiam@gmail.com" id="mainForm">
         <fieldset>
-            <legend>Capital</legend>
+            <legend><b>Capital</b></legend>
             <input type="radio" name="Capital" value="Coreia Do Norte">
             <label> Coreia do Norte</label>
             <br>
@@ -50,13 +52,14 @@
         </fieldset>
         <br>
         <fieldset>
-            <legend>Fundação de Seoul</legend>
+            <legend><b>Fundação de Seoul</b></legend>
             <label>Ano: </label>
-            <input type="number" name="Year when Founded" min="2" max="100" step="2">
+            <input type="range" name="Year" min="1" max="100" value="10" step="1" oninput="N.value = parseInt(Year.value)">
+            <output name="N" for="Year">10</output>
             <label>b.c.</label>
             <br><br>
-            <label>Nome do império: </label>
-            <select name="Empire that Founded">
+            <label>Nome do Império: </label>
+            <select name="Empire that Founded" size="1" multiple>
                 <option value="Baekje">Baekje</option>
                 <option value="Joseon">Joseon</option>
                 <option value="Império Coreano" selected>Império Coreano</option>
@@ -68,9 +71,10 @@
         </fieldset>
         <br>
         <fieldset>
-            <legend>Monumentos de Seoul</legend>
+            <legend><b>Monumentos de Seoul</b></legend>
+            <br>
             <label>Quais destes são monumentos são de <i>Seoul</i>? (Relativamente ao video)</label>
-            <br><br>
+            <br>
             <input type="checkbox" name="Monument Value 1" value="Gyeongbukgung Palace">
             <label> Gyeongbukgung Palace</label>
             <br>
@@ -88,33 +92,96 @@
         </fieldset>
         <br>
         <fieldset>
-            <legend>Informação Geral</legend>
+            <legend><b>Informação Geral</b></legend>
             <label>Quando é que lhe foi dada o nome <i>Seoul</i>? </label>
             <input type="date" name="When name was made" min="1900-01-01" max="2000-01-01">
             <br><br>
             <label>Qual é a quantidade de População? </label>
-            <input type="number" name="Population" min="1">
+            <input type="number" name="Population" min="1" step="0.5" value="5">
             <label> milhões</label>
             <br><br>
             <label>Qual a área total de Seoul? </label>
-            <input type="number" name="Area" min="100" max="1000">
+            <input type="number" name="Area" min="100" max="1000" value="150">
             <label> km²</label>
         </fieldset>
         <br>
         <fieldset>
-            <legend>Simbolos Nacionais</legend>
+            <legend><b>Simbolos Nacionais</b></legend>
             <label>Passaro Nacional: </label>
-            <input type="text" name="National Bird">
+            <input list="birds" name="National Bird" placeholder="Crow">
+            <datalist id="birds">
+                <option value="Black hawk-eagle">
+                <option value="Chattering Iory">
+                <option value="Crested Barbet">
+                <option value="Kabobo Apalis">
+                <option value="Iberian Magpie">
+            </datalist>
             <br><br>
             <label>Cor Nacional: </label>
             <input type="color" name="National Color" value="#ff0000">
             <br><br>
             <label>Flor Nacional: </label>
-            <input type="text" name="National Flower">
-            <br>
+            <input list="flowers" name="National Flower" placeholder="Rose">
+            <datalist id="flowers">
+                <option value="Agapanthus">
+                <option value="Alchemilla">
+                <option value="Rain Lily">
+                <option value="Gardenia">
+                <option value="Xylosma">
+            </datalist>
         </fieldset>
-        <br>
+        <br><br>
+        <center><input type="image" src="images/submit.jpg" alt="Submit"></center>
+        <center><legend>(Ao selecionar este botão, todos os dados nesta página, ou seja, os dados que foram inseridos no formulário, irão ser transmitidos para um endereço emails especificado)</legend></center>
     </form>
     <br><br><br>
+    <center><svg width="400" height="300">
+        <g transform="translate(100,100)"> 
+            <a href="index.html">
+                <text id="Introdução" x="0" y="0" font-size="2em" fill="blue">Introdução
+                <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze"/>
+                <animateMotion path="M 0 0 L 0 0" begin="0s" dur="3s" fill="freeze" />
+                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="1.5" additive="sum" begin="0s" dur="3s" fill="freeze"/>  
+                </text> 
+            </a>
+            <a href="local.html">
+                <text id="Localização" x="20" y="20" fill="red">Localização
+                    <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                    <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/> 
+                </text> 
+            </a>
+            <a href="multimedia.html">
+                <text id="Multimédia" x="40" y="40" fill="black">Multimédia
+                    <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                    <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/> 
+                </text> 
+            </a>    
+            <a href="info.html">
+                <text id="Informações" x="60" y="60" fill="grey">Informações
+                    <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                    <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                </text> 
+            </a>
+            <a href="quizz.html">
+                <text id="Quizz" x="80" y="80" fill="purple">Quizz
+                    <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                    <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                </text> 
+            </a>
+            <a href="comentarios.html">
+                <text id="Comentários" x="100" y="100" fill="brown">Comentários
+                    <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                    <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                    <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                </text> 
+            </a>
+        </g> 
+    </svg></center>
+    <br><br>
 </body>
 </html>
