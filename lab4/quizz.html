@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="description" content="Website sobre Seoul, a capital da Coreia do Sul.">
+    <meta name="keywords" content="Lusofona,HTML,Programação Web,Trabalhos,Seoul">
+    <meta name="author" content="Diogo Araújo">
+    <link rel="shortcut icon" type="image/x-icon" href="images/city.ico"/>
+    <title>PW Lab2</title>
+</head>
+<body>
+    <header>
+        <center><h1> Seoul </h1></center>
+        <hr>
+        <br>
+        <figure>
+            <center><img src="images/seoulNight.jpg" alt="City of Seoul at Night"></center>
+        </figure>
+    </header>
+    <center><nav>
+        <p><i class="material-icons" style="color:grey;">cloud</i> <a href="index.html">Introdução</a> | <i class="material-icons" style="color:grey;">map</i> <a href="local.html">Localização</a> | <i class="material-icons" style="color:grey;">camera</i> <a href="multimedia.html">Multimédia</a> | <i class="material-icons" style="color:grey;">info</i> <a href="info.html">Informações</a> | <i class="material-icons" style="color:grey;">?</i> <a href="quizz.html" id="impact">Quizz</a> | <i class="material-icons" style="color:grey;">comment</i> <a href="comentarios.html">Comentários</a> | <i class="material-icons" style="color:grey;">code</i> <a href="html5-css.html">HTML5 e CSS</a> | <i class="material-icons" style="color:grey;">home</i> <a href="../index.html">Home</a></p>
+        <br><br>
+    </nav></center>
+    <main>
+        <section class="highlight_introduction">
+            <center><h3>Quizz</h3></center>
+            <center><p>Nesta página é possivel efetuar um quiz sobre a cidade, onde será testado em informação presente nas páginas anteriores. No fim, é possivel mandar os resultados para um endereço de email.</p></center>
+            <br><br>
+        </section>
+
+        <section  class="inputspace">
+            <form autocomplete="on">
+                <fieldset>
+                    <legend><b>Identificação Utilizador</b></legend>
+                    <label>Nome: </label>
+                    <input type="text" name="Nome" placeholder="Diogo" size="30" maxlength="25" form="mainForm" autofocus required>
+                    <br>
+                    <label>Apelido: </label>
+                    <input type="text" name="Apelido" placeholder="Araújo" size="30" maxlength="25" form="mainForm" required>
+                    <br>
+                    <label>Email: </label>
+                    <input type="email" name="Gmail" placeholder="peekypeter@gmail.com" size="30" maxlength="30" form="mainForm" required>
+                </fieldset>
+                <br>
+            </form>
+        </section>
+
+        <section>
+            <form method="POST" action="mailto:deeeeeepiam@gmail.com" id="mainForm">
+                <fieldset>
+                    <legend><b>Capital</b></legend>
+                    <input type="radio" name="Capital" value="Coreia Do Norte">
+                    <label> Coreia do Norte</label>
+                    <br>
+                    <input type="radio" name="Capital" value="Coreia do Sul">
+                    <label> Coreia do Sul</label> 
+                    <br>
+                    <input type="radio" name="Capital" value="China">
+                    <label> China</label>
+                    <br>
+                    <input type="radio" name="Capital" value="Japão">
+                    <label> Japão</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><b>Fundação de Seoul</b></legend>
+                    <label>Ano: </label>
+                    <input type="range" name="Year" min="1" max="100" value="10" step="1" oninput="N.value = parseInt(Year.value)">
+                    <output name="N" for="Year">10</output>
+                    <label>b.c.</label>
+                    <br><br>
+                    <label>Nome do Império: </label>
+                    <select name="Empire that Founded" size="1" multiple>
+                        <option value="Baekje">Baekje</option>
+                        <option value="Joseon">Joseon</option>
+                        <option value="Império Coreano" selected>Império Coreano</option>
+                        <option value="Goryeo">Goryeo</option>
+                    </select>
+                    <br><br>
+                    <label>Nome no Momento: </label>
+                    <input type="text" name="Name when Founded" placeholder="Bukhasan">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><b>Monumentos de Seoul</b></legend>
+                    <br>
+                    <label>Quais destes são monumentos são de <i>Seoul</i>? (Relativamente ao video)</label>
+                    <br>
+                    <input type="checkbox" name="Monument Value 1" value="Gyeongbukgung Palace">
+                    <label> Gyeongbukgung Palace</label>
+                    <br>
+                    <input type="checkbox" name="Monument Value 2" value="War Memorial">
+                    <label> War Memorial</label>
+                    <br>
+                    <input type="checkbox" name="Monument Value 3" value="Potala Palace">
+                    <label> Potala Palace</label>
+                    <br>
+                    <input type="checkbox" name="Monument Value 4" value="Mount Fuji">
+                    <label> Mount Fuji</label>
+                    <br>
+                    <input type="checkbox" name="Monument Value 5" value="Tower of Seoul">
+                    <label> N Seoul Tower</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><b>Informação Geral</b></legend>
+                    <label>Quando é que lhe foi dada o nome <i>Seoul</i>? </label>
+                    <input type="date" name="When name was made" min="1900-01-01" max="2000-01-01">
+                    <br><br>
+                    <label>Qual é a quantidade de População? </label>
+                    <input type="number" name="Population" min="1" step="0.5" value="5">
+                    <label> milhões</label>
+                    <br><br>
+                    <label>Qual a área total de Seoul? </label>
+                    <input type="number" name="Area" min="100" max="1000" value="150">
+                    <label> km²</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><b>Simbolos Nacionais</b></legend>
+                    <label>Passaro Nacional: </label>
+                    <input list="birds" name="National Bird" placeholder="Crow">
+                    <datalist id="birds">
+                        <option value="Black hawk-eagle">
+                        <option value="Chattering Iory">
+                        <option value="Crested Barbet">
+                        <option value="Kabobo Apalis">
+                        <option value="Iberian Magpie">
+                    </datalist>
+                    <br><br>
+                    <label>Cor Nacional: </label>
+                    <input type="color" name="National Color" value="#ff0000">
+                    <br><br>
+                    <label>Flor Nacional: </label>
+                    <input list="flowers" name="National Flower" placeholder="Rose">
+                    <datalist id="flowers">
+                        <option value="Agapanthus">
+                        <option value="Alchemilla">
+                        <option value="Rain Lily">
+                        <option value="Gardenia">
+                        <option value="Xylosma">
+                    </datalist>
+                </fieldset>
+                <br><br>
+                <center><input type="image" src="images/submit.jpg" alt="Submit"></center>
+                <center><legend>(Ao selecionar este botão, todos os dados nesta página, ou seja, os dados que foram inseridos no formulário, irão ser transmitidos para um endereço emails especificado)</legend></center>
+            </form>
+        </section>
+
+        <section>
+            <br><br><br>
+            <center><svg width="400" height="300">
+                <g transform="translate(100,100)"> 
+                    <a href="index.html">
+                        <text id="Introdução" x="0" y="0" font-size="2em" fill="blue">Introdução
+                        <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze"/>
+                        <animateMotion path="M 0 0 L 0 0" begin="0s" dur="3s" fill="freeze" />
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                        <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="1.5" additive="sum" begin="0s" dur="3s" fill="freeze"/>  
+                        </text> 
+                    </a>
+                    <a href="local.html">
+                        <text id="Localização" x="20" y="20" fill="red">Localização
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/> 
+                        </text> 
+                    </a>
+                    <a href="multimedia.html">
+                        <text id="Multimédia" x="40" y="40" fill="black">Multimédia
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/> 
+                        </text> 
+                    </a>    
+                    <a href="info.html">
+                        <text id="Informações" x="60" y="60" fill="grey">Informações
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                        </text> 
+                    </a>
+                    <a href="quizz.html">
+                        <text id="Quizz" x="80" y="80" fill="purple">Quizz
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                        </text> 
+                    </a>
+                    <a href="comentarios.html">
+                        <text id="Comentários" x="100" y="100" fill="brown">Comentários
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                        </text> 
+                    </a>
+                    <a href="html5-css.html">
+                        <text id="HTML5-CSS" x="120" y="120" fill="magenta">HTML5 e CSS
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                        </text> 
+                    </a>
+                </g> 
+            </svg></center>
+            <br><br>
+        </section>
+    </main>
+    <center><footer>
+        <p>Diogo Araújo - a21905661 - Universidade Lusofona - 2021</p>
+    </footer></center>
+</body>
+</html>

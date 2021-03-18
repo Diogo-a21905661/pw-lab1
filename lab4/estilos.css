@@ -1,0 +1,96 @@
+* {
+    font-family: fantasy;
+    font-size: 12pt;
+}
+
+section a {
+    font-family: fantasy;
+    font-size: 14pt;
+}
+
+body {
+    background-color: lavenderblush;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 24pt;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-family: fantasy;
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.highlight_introduction {
+    background-color: lightgrey;
+}
+
+#impact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+a:link {
+    color: blue;
+}
+
+a[target=_blank] {
+    color: red;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 16pt;    
+    font-weight: bold;
+}
+
+svg {
+    border-style: solid;
+    border-color: grey;
+}
+
+section > ul {
+    border-style: dotted;
+    border-color: grey
+}
+
+a:visited {
+    color: steelblue;
+}
+
+a:active {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.inputspace input {
+    display: block;
+}
+
+iframe, img {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    position: sticky;
+}
+
+.container {
+    position: relative;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}

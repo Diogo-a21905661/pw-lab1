@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="description" content="Website sobre Seoul, a capital da Coreia do Sul.">
+    <meta name="keywords" content="Lusofona,HTML,Programação Web,Trabalhos,Seoul">
+    <meta name="author" content="Diogo Araújo">
+    <link rel="shortcut icon" type="image/x-icon" href="images/city.ico"/>
+    <title>PW Lab2</title>
+</head>
+<body>
+    <header>
+        <center><h1> Seoul </h1></center>
+        <hr>
+        <br>
+        <figure>
+            <center><img src="images/seoulNight.jpg" alt="City of Seoul at Night"></center>
+        </figure>
+    </header>
+    <center><nav>
+        <p><i class="material-icons" style="color:grey;">cloud</i> <a href="index.html">Introdução</a> | <i class="material-icons" style="color:grey;">map</i> <a href="local.html">Localização</a> | <i class="material-icons" style="color:grey;">camera</i> <a href="multimedia.html">Multimédia</a> | <i class="material-icons" style="color:grey;">info</i> <a href="info.html">Informações</a> | <i class="material-icons" style="color:grey;">?</i> <a href="quizz.html">Quizz</a> | <i class="material-icons" style="color:grey;">comment</i> <a href="comentarios.html" id="impact">Comentários</a> | <i class="material-icons" style="color:grey;">code</i> <a href="html5-css.html">HTML5 e CSS</a> | <i class="material-icons" style="color:grey;">home</i> <a href="../index.html">Home</a></p>
+        <br><br>
+    </nav></center>
+    <main>
+        <section class="highlight_introduction">
+            <center><h3>Comentários</h3></center>
+            <center><p>Nesta página é possivel mandar a sua opinião, ou algum comentário que tiver sobre o Website, através de um formulário. Também é possivel transmitir quaisquer ideias de como o melhorar.</p></center>
+            <br><br>
+        </section>
+
+        <section>
+            <form method="POST" action="mailto:deeeeeepiam@gmail.com">
+                <fieldset>
+                    <legend><b>Formulário de Apreciação</b></legend>
+                    <label><b>Clareza</b> - Compreensível, em que o significado pode ser identificado sem que haja confusão ou ambiguidade.</label>
+                    <br>
+                    <pre>        1(Bad)       5(Good)</pre>
+                    <label>Rating :</label>
+                    <input type="radio" name="ClarezaRate" value="1">
+                    <input type="radio" name="ClarezaRate" value="2">
+                    <input type="radio" name="ClarezaRate" value="3">
+                    <input type="radio" name="ClarezaRate" value="4">
+                    <input type="radio" name="ClarezaRate" value="5">
+                    <br><br>
+                    <textarea name="Clareza" rows="1" cols="80" placeholder="Insira aqui onde encontrou algum erro na Clareza do Website, se encontrou."></textarea>
+                    <br><br><br>
+                    <label><b>Rigor</b> - Livre de erros.</label>
+                    <br>
+                    <pre>        1(Bad)       5(Good)</pre>
+                    <label>Rating :</label>
+                    <input type="radio" name="RigorRate" value="1">
+                    <input type="radio" name="RigorRate" value="2">
+                    <input type="radio" name="RigorRate" value="3">
+                    <input type="radio" name="RigorRate" value="4">
+                    <input type="radio" name="RigorRate" value="5">
+                    <br><br>
+                    <textarea name="Rigor" rows="1" cols="80" placeholder="Insira aqui onde encontrou algum erro no Rigor do Website, se encontrou."></textarea>
+                    <br><br><br>
+                    <label><b>Precisão</b> - Exato, segundo o nível necessário de pormenor.</label>
+                    <br>
+                    <pre>        1(Bad)       5(Good)</pre>
+                    <label>Rating :</label>
+                    <input type="radio" name="PrecisãoRate" value="1">
+                    <input type="radio" name="PrecisãoRate" value="2">
+                    <input type="radio" name="PrecisãoRate" value="3">
+                    <input type="radio" name="PrecisãoRate" value="4">
+                    <input type="radio" name="PrecisãoRate" value="5">
+                    <br><br>
+                    <textarea name="Precisão" rows="1" cols="80" placeholder="Insira aqui onde encontrou algum erro na Precisão do Website, se encontrou."></textarea>
+                    <br><br><br>
+                    <label><b>Profundidade</b> - Contém complexidades e múltiplas inter-relações.</label>
+                    <br>
+                    <pre>        1(Bad)       5(Good)</pre>
+                    <label>Rating :</label>
+                    <input type="radio" name="ProfundidadeRate" value="1">
+                    <input type="radio" name="ProfundidadeRate" value="2">
+                    <input type="radio" name="ProfundidadeRate" value="3">
+                    <input type="radio" name="ProfundidadeRate" value="4">
+                    <input type="radio" name="ProfundidadeRate" value="5">
+                    <br><br>
+                    <textarea name="Profundidade" rows="1" cols="80" placeholder="Insira aqui onde encontrou algum erro na Profundidade do Website, se encontrou."></textarea>
+                    <br><br><br>
+                    <label><b>Amplitude</b> - Abrange diferentes aspectos, pontos de vista, pespectivas.</label>
+                    <br>
+                    <pre>        1(Bad)       5(Good)</pre>
+                    <label>Rating :</label>
+                    <input type="radio" name="AmplitudeRate" value="1">
+                    <input type="radio" name="AmplitudeRate" value="2">
+                    <input type="radio" name="AmplitudeRate" value="3">
+                    <input type="radio" name="AmplitudeRate" value="4">
+                    <input type="radio" name="AmplitudeRate" value="5">
+                    <br><br>
+                    <textarea name="Amplitude" rows="1" cols="80" placeholder="Insira aqui onde encontrou algum erro na Clareza do Website, se encontrou."></textarea>
+                    <br><br><br>
+                    <label><b>Lógica</b> - As partes fazem sentido num todo, sem contradições: faz sentido no conjunto, provém de evidências.</label>
+                    <br>
+                    <pre>        1(Bad)       5(Good)</pre>
+                    <label>Rating :</label>
+                    <input type="radio" name="LógicaRate" value="1">
+                    <input type="radio" name="LógicaRate" value="2">
+                    <input type="radio" name="LógicaRate" value="3">
+                    <input type="radio" name="LógicaRate" value="4">
+                    <input type="radio" name="LógicaRate" value="5">
+                    <br><br>
+                    <textarea name="Lógica" rows="1" cols="80" placeholder="Insira aqui onde encontrou algum erro na Lógica do Website, se encontrou."></textarea>
+                    <br><br><br>
+                    <label><b>Significância</b> - Focado no importante, não trivial.</label>
+                    <br>
+                    <pre>        1(Bad)       5(Good)</pre>
+                    <label>Rating :</label>
+                    <input type="radio" name="SignificânciaRate" value="1">
+                    <input type="radio" name="SignificânciaRate" value="2">
+                    <input type="radio" name="SignificânciaRate" value="3">
+                    <input type="radio" name="SignificânciaRate" value="4">
+                    <input type="radio" name="SignificânciaRate" value="5">
+                    <br><br>
+                    <textarea name="Significância" rows="1" cols="80" placeholder="Insira aqui onde encontrou algum erro na Significância do Website, se encontrou."></textarea>
+                    <br><br><br>
+                    <label><b>Originalidade</b> - Criativo e original.</label>
+                    <br>
+                    <pre>        1(Bad)       5(Good)</pre>
+                    <label>Rating :</label>
+                    <input type="radio" name="OriginalidadeRate" value="1">
+                    <input type="radio" name="OriginalidadeRate" value="2">
+                    <input type="radio" name="OriginalidadeRate" value="3">
+                    <input type="radio" name="OriginalidadeRate" value="4">
+                    <input type="radio" name="OriginalidadeRate" value="5">
+                    <br><br>
+                    <textarea name="Originalidade" rows="1" cols="80" placeholder="Insira aqui onde encontrou algum erro na Originalidade do Website, se encontrou."></textarea>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend>Sugestões de melhoria</legend>
+                    <textarea name="Sugestões" rows="5" cols="125" placeholder="Insira qualquer sugestão que tenha de modo a podermos melhorar o Website e a sua experiencia."></textarea>
+                    <br><br>
+                    <label>Quanto apreciou este Website? </label>
+                    <select name="WebsiteRate" size="1">
+                        <option value="Péssimo">Péssimo!</option>
+                        <option value="Mau">Mau</option>
+                        <option value="Mediocre" selected>Mediocre</option>
+                        <option value="Bom">Bom</option>
+                        <option value="Excelente">Excelente!</option>
+                    </select>
+                </fieldset>
+                <input type="hidden" name="hiddenComment" value="A minha utilização de CSS neste trabalho foi, na minha opinião, muito principiante, mas gostei muito de trabalhar com o CSS e acho que com o tempo irei melhorar em relação em relação aos erros que eu acho que estou a cometer de momento.">
+                <br><br>
+                <center><input type="image" src="images/submit.jpg" alt="SubmitComments"></center>
+                <center><legend>(Ao selecionar este botão, todos os dados nesta página, ou seja, os dados que foram inseridos no formulário, irão ser transmitidos para um endereço emails especificado)</legend></center>  
+            </form>
+        </section>
+
+        <section>
+            <br><br><br>
+            <center><svg width="400" height="300">
+                <g transform="translate(100,100)"> 
+                    <a href="index.html">
+                        <text id="Introdução" x="0" y="0" font-size="2em" fill="blue">Introdução
+                        <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze"/>
+                        <animateMotion path="M 0 0 L 0 0" begin="0s" dur="3s" fill="freeze" />
+                        <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                        <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="1.5" additive="sum" begin="0s" dur="3s" fill="freeze"/>  
+                        </text> 
+                    </a>
+                    <a href="local.html">
+                        <text id="Localização" x="20" y="20" fill="red">Localização
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/> 
+                        </text> 
+                    </a>
+                    <a href="multimedia.html">
+                        <text id="Multimédia" x="40" y="40" fill="black">Multimédia
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/> 
+                        </text> 
+                    </a>    
+                    <a href="info.html">
+                        <text id="Informações" x="60" y="60" fill="grey">Informações
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                        </text> 
+                    </a>
+                    <a href="quizz.html">
+                        <text id="Quizz" x="80" y="80" fill="purple">Quizz
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                        </text> 
+                    </a>
+                    <a href="comentarios.html">
+                        <text id="Comentários" x="100" y="100" fill="brown">Comentários
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                        </text> 
+                    </a>
+                    <a href="html5-css.html">
+                        <text id="HTML5-CSS" x="120" y="120" fill="magenta">HTML5 e CSS
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                            <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                        </text> 
+                    </a>
+                </g> 
+            </svg></center>
+            <br><br>
+        </section>
+    </main>
+    <center><footer>
+        <p>Diogo Araújo - a21905661 - Universidade Lusofona - 2021</p>
+    </footer></center>
+</body>
+</html>
