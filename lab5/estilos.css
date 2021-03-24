@@ -1,0 +1,243 @@
+/* Give every letter in these documents a font and a size, also make them work with responsive design */
+* {
+    font-family: fantasy;
+    font-size: 12pt;
+    box-sizing: border-box;
+}
+
+/*Give the background color */
+body {
+    background-color: lavenderblush;
+}
+
+/*Make the menu and the title always align in the center*/
+nav, header {
+    align-items: center;
+}
+
+/*Define CSS Grid */
+#grid {
+    align-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 35% 30%;
+    grid-row-gap: 100px;
+}
+#tabela {
+    grid-column-end: 1;
+}
+
+/*Utilização do CSS Flex para a galeria de fotos */
+#flex-gallery {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#mobileFlex {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    display: none;
+    visibility: hidden;
+}
+
+/*Transições feitas para a galeria de imagens */
+/*Efeitos feitos para a galeria de imagens */
+
+/* Primeira linha */
+.transition1 {
+    width: 300px;
+    transition: width 2s, height 3s;
+    filter:grayscale(100%);
+}
+
+.transition1:hover {
+    width: 400px; 
+    height: 290px;
+}
+
+/*Segunda linha */
+.transition2 {
+    width: 300px;
+    transition: height 5s;
+    filter:invert(100%);
+}
+
+.transition2:hover {
+    height: 400px;
+}
+
+/*Terceira linha */
+.transition3 {
+    width: 300px;
+    transition: width 0.5s;
+}
+
+.transition3:hover {
+    width: 400px;
+    transform: scaleX(-1);
+}
+
+/*Animação feita na página introdutória */
+@keyframes animation {
+    0% {border-color:red; left:0px; top:0px; border-width:10px;}
+    25% {border-color:yellow; left:200px; top:0px; border-width:15px;}
+    50% {border-color:blue; left:200px; top:200px; border-width:20px;}
+    75% {border-color:green; left:0px; top:200px; border-width:25px;}
+    100% {border-color:black; left:0px; top:0px; border-width:2px;}
+}
+.animacao {
+    animation-iteration-count: 3;
+    animation-name: animation;
+    animation-duration: 10s;
+}
+
+/* Change the size of any link to a bit higher */
+section a {
+    font-family: fantasy;
+    font-size: 14pt;
+}
+
+/*Change the size of each title to bigger and also its style */
+h1 {
+    font-style: italic;
+    font-size: 24pt;
+    text-transform: capitalize;
+}
+
+/*Change the size of each "headline" to slightly bigger, bolder and with a line underneath it */
+h3 {
+    font-family: fantasy;
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*Make the introduction be highlighted in light grey */
+.highlight_introduction {
+    background-color: lightgrey;
+}
+
+/*Make it so that when a link has been clicked, it will have a different font, size and weightby using this id */
+#impact {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 12pt;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/*We should configure our site to be mobile first, and then change it to desktop */
+/*My site however, has been PC first since the start, so im just gonna keep it like this */
+.mobileMenu {
+    visibility: hidden;
+    display: inline;
+    display: none;
+}
+
+/*Any link starts with the color "blue" */
+a:link {
+    color: blue;
+}
+
+/*Any link that will open up in a different page is the color "red" */
+a[target=_blank] {
+    color: red;
+}
+
+/*When hovering over a link, turn it bold */
+a:hover {
+    font-weight: bold;
+}
+
+/*The first letter of any paragraph is bold and slighly larger */
+p::first-letter {
+    font-size: 16pt;    
+    font-weight: bold;
+}
+
+/*Give the SVG Images a solid grey border */
+svg {
+    border-style: solid;
+    border-color: grey;
+}
+
+/*Add a dotted border around any lists immediatly inside a section */
+section > ul {
+    border-style: dotted;
+    border-color: grey
+}
+
+/*After a link has been clicked, turn into "steelblue", lighter form of previous color */
+a:visited {
+    color: steelblue;
+}
+
+/*When a link is actively being clicked, turn into bold and "blueviolet" */
+a:active {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+/*Adds slight breaks in between inputs */
+.inputspace input {
+    display: block;
+}
+
+/* Sets the border of the images and iframes */
+iframe, img {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    position: sticky;
+}
+
+/*Resize the SVG based on the images by its side */
+.keepCenter {
+    width: 30%;
+}
+
+.keepCenter svg {
+    width: 100%;
+}
+
+/*Keep images to the left */
+.moveLeft {
+    float: left;
+    width: 35%;
+    position: sticky;
+}
+
+/* Keep image to the right */
+.moveRight {
+    float: right;
+    width: 35%;
+    position: sticky;
+}
+
+@media screen and (max-width: 1000px) {
+    /* Hide images on bottom side when reached widht of 1000px */
+    /* Hide the SVG Menu before the footer */
+    /*Hide the navigation menu on top */
+    aside, .keepCenter, nav, #flex-gallery {
+        visibility: hidden;
+        display: none;
+    }
+
+    /*Activate the mobile features for the menu */
+    /*Display: block makes it so that they actually take up space (might not be needed) */
+    .mobileMenu, .mobileFlex {
+        visibility: visible;
+        display: block;
+    }
+
+    /*Take out the bullet points from the mobile menu */
+    .mobileMenu > ul {
+        list-style-type: none;
+    }
+}

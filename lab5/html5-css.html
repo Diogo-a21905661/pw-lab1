@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="description" content="Website sobre Seoul, a capital da Coreia do Sul.">
+    <meta name="keywords" content="Lusofona,HTML,Programação Web,Trabalhos,Seoul">
+    <meta name="author" content="Diogo Araújo">
+    <link rel="shortcut icon" type="image/x-icon" href="images/city.ico"/>
+    <title>PW Lab2</title>
+</head>
+<body>
+    <center><header>
+        <h1> Seoul </h1>
+        <hr>
+        <figure>
+            <img src="images/seoulNight.jpg" alt="City of Seoul at Night" max-width="100%" height="100%">
+        </figure>
+    </header></center>
+    <center><nav>
+        <i class="material-icons" style="color:grey;">cloud</i> <a href="index.html">Introdução</a> |
+        <i class="material-icons" style="color:grey;">map</i> <a href="local.html">Localização</a> | 
+        <i class="material-icons" style="color:grey;">camera</i> <a href="multimedia.html">Multimédia</a> | 
+        <i class="material-icons" style="color:grey;">info</i> <a href="info.html">Informações</a> | 
+        <i class="material-icons" style="color:grey;">?</i> <a href="quizz.html">Quizz</a> | 
+        <i class="material-icons" style="color:grey;">comment</i> <a href="comentarios.html">Comentários</a> | 
+        <i class="material-icons" style="color:grey;">code</i> <a href="html5-css.html" id="impact">HTML5 e CSS</a> | 
+        <i class="material-icons" style="color:grey;">home</i> <a href="../index.html">Home</a>
+        <br><br><br>
+    </nav></center>
+
+    <center><section class="mobileMenu">
+        <ul>
+            <li><i class="material-icons" style="color:grey;">cloud</i> <a href="index.html" id="impact">Introdução</a></li>
+            <li><i class="material-icons" style="color:grey;">map</i> <a href="local.html">Localização</a></li>
+            <li><i class="material-icons" style="color:grey;">camera</i> <a href="multimedia.html">Multimédia</a></li>
+            <li><i class="material-icons" style="color:grey;">info</i> <a href="info.html">Informações</a></li>
+            <li><i class="material-icons" style="color:grey;">?</i> <a href="quizz.html">Quizz</a></li>
+            <li><i class="material-icons" style="color:grey;">comment</i> <a href="comentarios.html">Comentários</a></li>
+            <li><i class="material-icons" style="color:grey;">code</i> <a href="html5-css.html">HTML5 e CSS</a></li>
+            <li><i class="material-icons" style="color:grey;">home</i> <a href="../index.html">Home</a></li>
+        </ul>
+        <br><br>
+    </section></center>
+
+    <main id="grid">
+        <section class="highlight_introduction">
+            <center><h3>HTML5 e CSS</h3></center>
+            <center><p>Nesta página é possivel visualizar 3 secções, estruturadas de modo a dividir informação sobre o HTML5 e sobre o CSS, como também apresentam tabelas com mais informação sobre esse tópicos.</p></center>
+        </section>
+
+        <center><section>
+            <h3>HTML5</h3>
+            <p>O HTML5 foi lançado em 2014, tendo o objetivo de simplificar vários aspectos do XHTML. Mantém grande parte das regras introduzidas pelo XHTML, tal como tudo estar em minúsculas e o correto encadeamento das etiquetas, mas também integrou um conjunto de funcionalidades que se revelaram úteis ao longo dos vários anos de sedimentação da web.</p>
+            <p>Sendo assim, o HTML5 acabou por ficar como uma versão mais simplificada do que o XHTML, mas mais exigentes que as versões anteriores de HTML.</p>
+            <br><br><br>
+            <table border="1" summary="Tabela sobre o HTML5" cellspacing="2" cellpadding="2" bgcolor="lightblue">
+                <caption>
+                    HTML5
+                </caption>
+                <colgroup>
+                    <col align="center">
+                    <col valign="center">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><i>Elementos</i></th>
+                        <th><i>Utilizou?</i></th>
+                        <th><i>Descrição</i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><i>header</i></th>
+                        <th><i class="material-icons" style="color:green">bookmark</th>
+                        <th>Indica cabeçalho. Utilizado em todas as páginas para indicar o "topo".</th>
+                    </tr>
+                    <tr>
+                        <th><i>nav</i></th>
+                        <th><i class="material-icons" style="color:green">bookmark</th>
+                        <th>Indica menu de navegação com links para as páginas. Utilizado em todas as páginas para indicar o menu de navegação.</th>
+                    </tr>
+                    <tr>
+                        <th><i>main</i></th>
+                        <th><i class="material-icons" style="color:green">bookmark</th>
+                        <th>Indica conteúdo principal e único, que não se repete. Utilizado em todas as páginas para indicar o seu conteúdo.</th>    
+                    </tr>
+                    <tr>
+                        <th><i>article</i></th>
+                        <th><i class="material-icons" style="color:red">bookmark</th>
+                        <th>Indica porção do documento que pode ser vista de forma independente.</th>    
+                    </tr>
+                    <tr>
+                        <th><i>section</i></th>
+                        <th><i class="material-icons" style="color:green">bookmark</th>
+                        <th>Especifica uma parte do conteúdo, usada em conjunto com etiquetas "hx". Utilizado em todas as páginas para dividir conteúdo do main.</th>
+                    </tr>
+                    <tr>
+                        <th><i>aside</i></th>
+                        <th><i class="material-icons" style="color:red">bookmark</th>
+                        <th>Indica anotações, publicidade ou outros assuntos desconexos.</th>
+                    </tr>
+                    <tr>
+                        <th><i>footer</i></th>
+                        <th><i class="material-icons" style="color:green">bookmark</th>
+                        <th>Indica rodapé da secção. Utilizado para identificar o autor em todas as páginas.</th>
+                    </tr>
+                    <tr>
+                        <th><i>details</i></th>
+                        <th><i class="material-icons" style="color:green">bookmark</th>
+                        <th>Define detalhes adicionais que o utilizador pode ver ou esconder. Utilizado para esconder informação sobre algumas imagens.</th>
+                    </tr>
+                    <tr>
+                        <th><i>meter</i></th>
+                        <th><i class="material-icons" style="color:red">bookmark</th>
+                        <th>Define uma medida escalar estática dentro de um intervalo.</th>
+                    </tr>
+                    <tr>
+                        <th><i>progress</i></th>
+                        <th><i class="material-icons" style="color:red">bookmark</th>
+                        <th>Define uma barra de progresso de uma tarefa.</th>
+                    </tr>
+                    <tr>
+                        <th><i>abbr</i></th>
+                        <th><i class="material-icons" style="color:green">bookmark</th>
+                        <th>Indica o significado de uma abreviatura em conjunto com o atributo "title". Usado para melhor descrever o CSS num paragráfo mais abaixo.</th>
+                    </tr>
+                    <tr>
+                        <th><i>address</i></th>
+                        <th><i class="material-icons" style="color:red">bookmark</th>
+                        <th>Informação sobre o contacto do autor.</th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th><i>(Elemento Exemplo)</i></th>
+                        <th><i>(Icon Exemplo)</i></th>
+                        <th><i>(Descrição Exemplo)</i></th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br><br><br>
+        </section></center>
+
+        <center><section>
+            <h3>CSS</h3>
+            <p>O <abbr title="Cascading Style Sheet">CSS</abbr> surge para separar o contéudo da sua aparência. É um conjunto de regras, onde cada regra é formada por um "seletor", capaz de identificar elementos do documento, e por uma "declaração de estilo", que será o valor. O uso do <abbr title="Cascading Style Sheet">CSS</abbr> diminui o tempo de desenvolvimento, faz o código mais facil de escrever e dá melhor controlo sobre a colocação dos elementos nas páginas.</p>
+            <br>
+            <table border="1" summary="Tabela sobre os seletores de CSS" cellspacing="2" cellpadding="2" bgcolor="lightblue">
+                <caption>
+                    CSS - Seletores
+                </caption>
+                <colgroup>
+                    <col align="center">
+                    <col valign="center">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><i>Seletores</i></th>
+                        <th><i>Utilizou?</i></th>
+                        <th><i>Descrição</i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><i>Universal</i></th>
+                        <th><i class="material-icons" style="color:green">circle</th>
+                        <th>O seletor universal aplica o estilo a todos os elementos da página.</th>
+                    </tr>
+                    <tr>
+                        <th><i>Tipo</i></th>
+                        <th><i class="material-icons" style="color:green">circle</th>
+                        <th>O seletor de tipo usa o nome do marcador a estilizar, onde a regra será aplicada a todos os elementos que possuem esse marcador.</th>
+                    </tr>
+                    <tr>
+                        <th><i>Classe</i></th>
+                        <th><i class="material-icons" style="color:green">circle</th>
+                        <th>O seletor de classe associa um nome a um estilo, onde o nome é antecedido de ".".</th>    
+                    </tr>
+                    <tr>
+                        <th><i>Id</i></th>
+                        <th><i class="material-icons" style="color:green">circle</th>
+                        <th>O atributo "id" permite identificar univocamente um elemento do HTML, onde o id é antecedido de "#".</th>    
+                    </tr>
+                    <tr>
+                        <th><i>Atributo</i></th>
+                        <th><i class="material-icons" style="color:green">circle</th>
+                        <th>Seletores que se aplicam a atributos de elementos, onde pode ser apenas referido o atributo.</th>
+                    </tr>
+                    <tr>
+                        <th><i>Pseudo-Classe</i></th>
+                        <th><i class="material-icons" style="color:green">circle</th>
+                        <th>Seletor associado ao estado de um elemento.</th>
+                    </tr>
+                    <tr>
+                        <th><i>Pseudo-Elemento</i></th>
+                        <th><i class="material-icons" style="color:green">circle</th>
+                        <th>Regras que se aplicam a partes de elementos.</th>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th><i>(Seletor Exemplo)</i></th>
+                        <th><i>(Icon Exemplo)</i></th>
+                        <th><i>(Descrição Exemplo)</i></th>
+                    </tr>
+                </tfoot>
+            </table>
+            <br><br><br>
+            <table border="1" summary="Tabela sobre os combinadores de seletores de CSS" cellspacing="2" cellpadding="2" bgcolor="lightblue">
+                <caption>
+                    CSS - Combinadores de Seletores
+                </caption>
+                <colgroup>
+                    <col align="center">
+                    <col valign="center">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th><i>Combinadores de Seletores</i></th>
+                        <th><i>Utilizou?</i></th>
+                        <th><i>Descrição</i></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th><i>Descendentes</i></th>
+                        <th><i class="material-icons" style="color:green">add</th>
+                        <th>Seletores descendentes são separados por espaço (div p). Todos os "p" que estão "dentro" de um "div".</th>
+                    </tr>
+                    <tr>
+                        <th><i>Filhos</i></th>
+                        <th><i class="material-icons" style="color:green">add</th>
+                        <th>Seletores filhos através do uso de ">" (div > p). Todos os "p" que estão "logo dentro" de um "div".</th>
+                    </tr>
+                    <tr>
+                        <th><i>Adjacentes</i></th>
+                        <th><i class="material-icons" style="color:red">add</th>
+                        <th>Seletores adjacentes através do uso de "~" (div ~ p). Todos os "p" que estão colocados depois de um "div".</th>    
+                    </tr>
+                    <tr>
+                        <th><i>Imediatamente Adjacentes</i></th>
+                        <th><i class="material-icons" style="color:red">add</th>
+                        <th>Seletores imediatamente adjacentes através do uso de "+" (div + p). Todos os "p" que estão colocados "imediatamente" depois de um "div".</th>    
+                    </tr>
+                    <tr>
+                        <th><i>Agrupar</i></th>
+                        <th><i class="material-icons" style="color:green">add</th>
+                        <th>Agrupar os seletores, separando-os por virgulas (div,p). Os seletores irão ficar com as condições.</th>
+                    </tr>   
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th><i>(Combinador de Seletor Exemplo)</i></th>
+                        <th><i>(Icon Exemplo)</i></th>
+                        <th><i>(Descrição Exemplo)</i></th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section></center>
+
+        <section>
+            <section>
+                <aside class="moveLeft">
+                    <figure>
+                        <img src="images/seoulDrop1.jpg" alt="Seoul Dropdown 1" width="100%" height="100%">
+                    </figure>
+                    <figure>
+                        <img src="images/seoulDrop4.jpg" alt="Seoul Dropdown 4" width="100%" height="100%">
+                    </figure>
+                </aside>
+                <aside class="moveRight">
+                    <figure>
+                        <img src="images/seoulDrop2.jpg" alt="Seoul Dropdown 1" width="100%" height="100%">
+                    </figure>
+                    <figure>
+                        <img src="images/seoulDrop3.jpg" alt="Seoul Dropdown 3" width="100%" height="100%">
+                    </figure>
+                </aside>
+            </section>
+           
+            <center><section class="keepCenter">
+                <center><svg width="280" height="320" class="keepCenter">
+                    <g transform="translate(100,100)"> 
+                        <a href="index.html">
+                            <text id="Introdução" x="0" y="0" font-size="2em" fill="blue">Introdução
+                            <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze"/>
+                            <animateMotion path="M 0 0 L 0 0" begin="0s" dur="3s" fill="freeze" />
+                            <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                            <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="1.5" additive="sum" begin="0s" dur="3s" fill="freeze"/>  
+                            </text> 
+                        </a>
+                        <a href="local.html">
+                            <text id="Localização" x="20" y="20" fill="red">Localização
+                                <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                                <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/> 
+                            </text> 
+                        </a>
+                        <a href="multimedia.html">
+                            <text id="Multimédia" x="40" y="40" fill="black">Multimédia
+                                <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                                <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/> 
+                            </text> 
+                        </a>    
+                        <a href="info.html">
+                            <text id="Informações" x="60" y="60" fill="grey">Informações
+                                <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                                <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                            </text> 
+                        </a>
+                        <a href="quizz.html">
+                            <text id="Quizz" x="80" y="80" fill="purple">Quizz
+                                <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                                <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                            </text> 
+                        </a>
+                        <a href="comentarios.html">
+                            <text id="Comentários" x="100" y="100" fill="brown">Comentários
+                                <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                                <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                            </text> 
+                        </a>
+                        <a href="html5-css.html">
+                            <text id="HTML5-CSS" x="120" y="120" fill="magenta">HTML5 e CSS
+                                <set attributeName="visibility" attributeType="CSS" to="visible" begin="0s" dur="3s" fill="freeze" />
+                                <animateMotion path="M 0 0 L 0 0" begin="0s" dur="5s" fill="freeze" />
+                                <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="-90" to="0" begin="0s" dur="3s" fill="freeze"/>
+                            </text> 
+                        </a>
+                    </g> 
+                </svg></center>
+            </section></center>
+        </section>
+    </main>
+    <center><footer>
+        <p>Diogo Araújo - a21905661 - Universidade Lusofona - 2021</p>
+    </footer></center>
+</body>
